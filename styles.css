@@ -1,0 +1,122 @@
+/* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px; /* Adjust max-width as needed */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.resistor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.resistor-image {
+    width: 80%;
+    height: 60px;
+    background-color: #d3d3d3;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.band-color {
+    width: 20%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.resistor-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 18px;
+    color: #333;
+}
+
+.color-selector {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.band {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.band select {
+    padding: 10px;
+    width: 100%;
+    max-width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+.reset-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.reset-button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .resistor-image {
+        width: 100%;
+    }
+
+    .band select {
+        font-size: 14px;
+    }
+
+    .reset-button {
+        font-size: 14px;
+    }
+}

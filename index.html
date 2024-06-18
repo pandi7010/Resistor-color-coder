@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resistor Color Coder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Resistor Color Coder</h1>
+        </header>
+        <main>
+            <div class="resistor">
+                <div class="resistor-image" id="resistorGraphic">
+                    <div class="band-color" id="bandColor1"></div>
+                    <div class="band-color" id="bandColor2"></div>
+                    <div class="band-color" id="bandColor3"></div>
+                    <div class="band-color" id="bandColor4"></div>
+                </div>
+                <div class="resistor-details">
+                    <div class="resistor-value" id="resistorValue">N/A</div>
+                    <div class="resistor-tolerance">Tolerance: <span id="toleranceValue">±0%</span></div>
+                </div>
+            </div>
+            <div class="color-selector">
+                <div class="band band-1">
+                    <label for="band1">Band 1:</label>
+                    <select id="band1" onchange="updateResistor()">
+                        <option value="none">Select Color</option>
+                        <option value="0">Black</option>
+                        <option value="1">Brown</option>
+                        <option value="2">Red</option>
+                        <option value="3">Orange</option>
+                        <option value="4">Yellow</option>
+                        <option value="5">Green</option>
+                        <option value="6">Blue</option>
+                        <option value="7">Violet</option>
+                        <option value="8">Gray</option>
+                        <option value="9">White</option>
+                    </select>
+                </div>
+                <div class="band band-2">
+                    <label for="band2">Band 2:</label>
+                    <select id="band2" onchange="updateResistor()">
+                        <option value="none">Select Color</option>
+                        <option value="0">Black</option>
+                        <option value="1">Brown</option>
+                        <option value="2">Red</option>
+                        <option value="3">Orange</option>
+                        <option value="4">Yellow</option>
+                        <option value="5">Green</option>
+                        <option value="6">Blue</option>
+                        <option value="7">Violet</option>
+                        <option value="8">Gray</option>
+                        <option value="9">White</option>
+                    </select>
+                </div>
+                <div class="band band-3">
+                    <label for="band3">Band 3:</label>
+                    <select id="band3" onchange="updateResistor()">
+                        <option value="none">Select Color</option>
+                        <option value="0">Black</option>
+                        <option value="1">Brown</option>
+                        <option value="2">Red</option>
+                        <option value="3">Orange</option>
+                        <option value="4">Yellow</option>
+                        <option value="5">Green</option>
+                        <option value="6">Blue</option>
+                        <option value="7">Violet</option>
+                        <option value="8">Gray</option>
+                        <option value="9">White</option>
+                    </select>
+                </div>
+                <div class="band band-4">
+                    <label for="band4">Band 4:</label>
+                    <select id="band4" onchange="updateResistor()">
+                        <option value="none">Select Color</option>
+                        <option value="1">Brown (±1%)</option>
+                        <option value="2">Red (±2%)</option>
+                        <option value="5">Green (±0.5%)</option>
+                        <option value="6">Blue (±0.25%)</option>
+                        <option value="7">Violet (±0.1%)</option>
+                        <option value="10">Gold (±5%)</option>
+                        <option value="20">Silver (±10%)</option>
+                    </select>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <button class="reset-button" onclick="reset()">Reset</button>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
